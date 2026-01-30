@@ -32,7 +32,7 @@ DEBUG = env.bool('DEBUG', default=False)
 # settings.py
 
 # 1. Host ko allow karein
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 CORS_ALLOW_ALL_ORIGINS = True
 
