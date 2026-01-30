@@ -138,5 +138,5 @@ USE_TZ = True
 
 # settings.py ke aakhir mein ye copy-paste karein
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static') # Ye Vercel ko batayega ke files yahan jama karni hain
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [] # Isay khali chor dein agar koi extra static folders nahi hain

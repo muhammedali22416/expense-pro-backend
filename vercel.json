@@ -6,14 +6,12 @@
       "use": "@vercel/python"
     }
   ],
+
   "routes": [
-    {
-      "src": "/static/(.*)",
-      "dest": "static/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "expense_backend/wsgi.py"
-    }
-  ]
+  {
+    "src": "/static/(.*)",
+    "dest": "static/$1"  
+  }
+]
+
 }
