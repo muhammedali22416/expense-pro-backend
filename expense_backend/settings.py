@@ -136,6 +136,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
+# settings.py ke aakhir mein ye copy-paste karein
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static') # Ye Vercel ko batayega ke files yahan jama karni hain
+STATICFILES_DIRS = [] # Isay khali chor dein agar koi extra static folders nahi hain
