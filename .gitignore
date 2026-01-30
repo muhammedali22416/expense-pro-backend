@@ -13,7 +13,3 @@ ENV/
 
 # Database (local wala agar hai)
 *.sqlite3
-
-# Static & Media
-# staticfiles/
-# media/
