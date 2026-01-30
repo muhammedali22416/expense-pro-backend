@@ -138,5 +138,5 @@ USE_TZ = True
 
 # settings.py ke aakhir mein ye copy-paste karein
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [] # Isay khali chor dein agar koi extra static folders nahi hain
