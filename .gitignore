@@ -13,3 +13,5 @@ ENV/
 
 # Database (local wala agar hai)
 *.sqlite3
+.vercel
+.env*.local
