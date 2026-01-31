@@ -1,7 +1,8 @@
 from django.contrib import admin
 from django.urls import path, include
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('api.urls')), # Ab ye line error nahi degi kyunki file ban chuki hai
+    path('api/', include('api.urls')), # <--- Agar yahan 'api/' hai
 ]
