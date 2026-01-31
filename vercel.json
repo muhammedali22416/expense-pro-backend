@@ -8,16 +8,8 @@
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
+      "src": "/(.*)",
       "dest": "expense_backend/wsgi.py"
-    },
-    {
-      "src": "/admin/(.*)",
-      "dest": "expense_backend/wsgi.py"
-    },
-    {
-      "src": "/static/(.*)",
-      "dest": "/staticfiles/$1"
     }
   ]
 }
