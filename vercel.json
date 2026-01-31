@@ -1,5 +1,4 @@
 {
-  "version": 2,
   "builds": [
     {
       "src": "expense_backend/wsgi.py",
@@ -16,4 +15,4 @@
       "dest": "expense_backend/wsgi.py"
     }
   ]
-}
+} 

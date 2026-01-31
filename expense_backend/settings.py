@@ -98,17 +98,11 @@ WSGI_APPLICATION = 'expense_backend.wsgi.application'
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': env('DB_NAME'),
-        'USER': env('DB_USER'),
-        'PASSWORD': env('DB_PASSWORD'),
-        'HOST': env('DB_HOST'),
-        'PORT': env('DB_PORT'),
-        'OPTIONS': {
-            'sslmode': 'require',
-        },
-    }
+    'default': dj_database_url.config(
+        default=env('DATABASE_URL'),
+        conn_max_age=600,
+        ssl_require=True
+    )
 }
 
 
@@ -149,4 +143,8 @@ USE_TZ = True
 # settings.py ke aakhir mein ye copy-paste karein
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Ye line sabse zaroori hai error khatam karne ke liye
+WHITENOISE_MANIFEST_STRICT = False 
+
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
